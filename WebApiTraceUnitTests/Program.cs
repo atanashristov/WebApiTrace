@@ -1,4 +1,5 @@
-﻿using WebApiTraceUnitTests.TraceSettings;
+﻿using System;
+using WebApiTraceUnitTests.TraceSettings;
 
 namespace WebApiTraceUnitTests
 {
@@ -11,6 +12,15 @@ namespace WebApiTraceUnitTests
             suite.CanSwitchLevels();
             suite.CanSwitchVerbosity();
             suite.TearDown();
+
+            Console.WriteLine("OK.");
+
+            if (System.Diagnostics.Debugger.IsAttached)
+            {
+                Console.WriteLine("Press <Enter> to close.");
+                Console.ReadLine();
+            }
+
         }
     }
 }
