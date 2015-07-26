@@ -84,6 +84,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\VersionInfo.cs">
+      <Link>VersionInfo.cs</Link>
+    </Compile>
     <Compile Include="Controllers\ExceptionController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Program.cs" />
